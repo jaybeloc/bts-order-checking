@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+*.local
+*.tsbuildinfo
+
+# Never commit a real export or customer document. The repository is public, so
+# a stray file here is published. The sample fixtures are the one exception and
+# hold invented data only.
+*.csv
+!src/test/fixtures/*.csv
+*.pdf
+*.xlsx
+*.xls
+*.zip

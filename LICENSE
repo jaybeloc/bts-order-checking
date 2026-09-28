@@ -1,0 +1,214 @@
+Jaybel BTS Order Check
+Proprietary Software Licence
+
+Copyright © 2026 Jaybel Office Choice (ABN 61 113 286 623), 75 Wolston Road,
+Sumner QLD 4074, Australia. All rights reserved.
+
+
+IMPORTANT — READ THIS FIRST
+===============================================================================
+
+This software is proprietary to Jaybel Office Choice ("Jaybel"). It is kept in
+a public repository for one reason only: so that GitHub Pages can serve it as a
+static website to Jaybel staff and other people Jaybel authorises.
+
+Making the repository public is NOT a grant of an open-source licence, and no
+open-source or public-domain licence should be inferred from its visibility,
+from the absence of a licence header in any individual file, or from the
+presence of third-party open-source components in the built site.
+
+Everything not expressly permitted below is reserved.
+
+
+1. DEFINITIONS
+===============================================================================
+
+"Software" means the source code, markup, stylesheets, configuration, sample
+data and documentation in this repository authored by or for Jaybel — that is,
+everything except the third-party libraries described in clause 5.
+
+"You" means the individual or legal entity reading, running or otherwise
+dealing with the Software.
+
+"Authorised User" means a current employee, officer, contractor or agent of
+Jaybel, or any other person Jaybel has given written permission to use the
+Software.
+
+
+2. WHAT YOU MAY DO
+===============================================================================
+
+2.1  Anyone may VIEW the Software's source in this repository, and may fork it
+     within GitHub to the extent GitHub's Terms of Service allow (see clause 9).
+
+2.2  An Authorised User may:
+
+     (a) use the Software, whether from a Jaybel-operated deployment or by
+         running a local copy, for Jaybel's internal business purposes;
+
+     (b) make copies of the Software as reasonably necessary for that internal
+         use, and for backup; and
+
+     (c) modify the Software for Jaybel's own internal use, provided the
+         modified version is not distributed outside Jaybel.
+
+2.3  Any copy or modified copy made under clause 2.2 remains subject to this
+     licence and must keep this LICENSE file and all copyright notices intact.
+
+
+3. WHAT YOU MAY NOT DO
+===============================================================================
+
+Except as clause 2 expressly permits, and except where Australian law grants a
+right that cannot be excluded by contract, You must NOT:
+
+3.1  copy, reproduce, publish, mirror, re-host or otherwise distribute the
+     Software or any part of it;
+
+3.2  modify, adapt, translate or create derivative works of the Software, or
+     incorporate any part of it into another product, project or codebase;
+
+3.3  sell, resell, rent, lease, licence, sublicence, distribute or otherwise
+     make the Software available to any third party, whether for a fee or free
+     of charge;
+
+3.4  use the Software, in whole or in part, to provide a commercial service, a
+     hosted or managed offering, or any product that competes with Jaybel;
+
+3.5  remove, obscure or alter any copyright, trade mark, attribution or other
+     proprietary notice in the Software;
+
+3.6  use "Jaybel", "Jaybel Office Choice", "JOC", or any Jaybel logo, trade
+     mark or trade dress, other than as they already appear unmodified within
+     the Software; or
+
+3.7  use the Software or its source code, or permit it to be used, as input to
+     train, fine-tune, evaluate or ground any machine-learning or artificial-
+     intelligence model, or include it in any dataset compiled for that
+     purpose.
+
+Reverse engineering, decompilation and disassembly are likewise not permitted,
+except to the minimum extent that such a restriction is unenforceable under
+applicable law.
+
+
+4. THE RULES AND THE EXPORT HANDLING ARE THE VALUABLE PART
+===============================================================================
+
+For the avoidance of doubt, the order checking logic — including without
+limitation the contents of `src/rules/`, `src/parse/` and `src/config.ts`, the
+rule set and the precedence between its categories, the thresholds, fee wording
+and note wording held in the configuration, and the handling of the Pronto
+export layout and its quirks — embodies Jaybel's business processes, trading
+terms and document formats, and is confidential commercial information of
+Jaybel. Clause 3 applies to it in full, and clause 3.2 in particular applies to
+porting that logic to another language or framework.
+
+
+5. THIRD-PARTY COMPONENTS
+===============================================================================
+
+The Software is built with third-party open-source libraries, which are NOT
+licensed to You under this licence. They remain governed by their own licences,
+and nothing in this document adds to, restricts or overrides those terms:
+
+  React, React DOM  — MIT — https://github.com/facebook/react
+  PapaParse         — MIT — https://github.com/mholt/PapaParse
+
+Those libraries are bundled into the built site. The build and test tooling in
+`devDependencies` is likewise third-party open source and is not shipped to
+users. See NOTICE.md for details. Where any conflict arises between this licence
+and a third-party licence in respect of a third-party component, the third-party
+licence prevails for that component.
+
+
+6. CUSTOMER DATA
+===============================================================================
+
+The Software runs entirely in the browser. The exports a user loads are read on
+that user's own machine, and are not uploaded, transmitted or stored by the
+Software or by Jaybel's hosting of it.
+
+This repository is public, so no real Pronto export, customer list or other
+personal information may be committed to it. Any sample data kept in the
+repository for testing must be invented. Nothing in this clause limits Jaybel's
+obligations under the Privacy Act 1988 (Cth) in respect of personal information
+handled outside the Software.
+
+
+7. NO WARRANTY
+===============================================================================
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, ACCURACY AND NON-INFRINGEMENT.
+
+In particular, the Software sorts orders by matching an expected export layout
+against a set of rules. Jaybel does not warrant that every order is placed in
+the right list, that every exception is detected, or that the Software will
+continue to work if the export template or the rules of the business change. AN
+ORDER MUST STILL BE CHECKED BY A PERSON BEFORE ITS STATUS IS CHANGED, IT IS
+RELEASED FOR PICKING, OR IT IS RELIED ON FOR ANY INVOICING, ACCOUNTING OR TAX
+PURPOSE.
+
+
+8. LIMITATION OF LIABILITY
+===============================================================================
+
+To the maximum extent permitted by law, in no event shall Jaybel or its
+contributors be liable for any claim, damages, loss of profits, loss of data,
+business interruption, or any other direct, indirect, incidental, special,
+exemplary or consequential damages, however caused and on any theory of
+liability, arising from or in connection with the Software or its use.
+
+Nothing in this licence excludes, restricts or modifies any guarantee, right or
+remedy under the Australian Consumer Law that cannot lawfully be excluded. Where
+Jaybel's liability may be limited but not excluded, that liability is limited to
+resupplying the Software or paying the cost of having it resupplied.
+
+
+9. GITHUB TERMS OF SERVICE
+===============================================================================
+
+Because this repository is public, GitHub's Terms of Service give other GitHub
+users a limited right to view and to fork it within GitHub. Jaybel acknowledges
+that right and does not purport to override it.
+
+That right is narrow. It does not permit any use, copying, modification or
+distribution beyond what GitHub's own Terms of Service require, and it does not
+grant any licence to the Software outside the GitHub platform. Clause 3 governs
+everything else.
+
+
+10. TERMINATION
+===============================================================================
+
+This licence terminates automatically and immediately if You breach any of its
+terms. Jaybel may also revoke an Authorised User's permission at any time by
+written notice. On termination You must stop using the Software and destroy all
+copies in Your possession or control. Clauses 3, 4, 6, 7, 8 and 11 survive
+termination.
+
+
+11. GOVERNING LAW
+===============================================================================
+
+This licence is governed by the laws of Queensland, Australia. You submit to the
+non-exclusive jurisdiction of the courts of Queensland and the courts competent
+to hear appeals from them.
+
+If any provision is held unenforceable, it is severed to the minimum extent
+necessary and the remainder continues in force.
+
+
+12. PERMISSIONS AND CONTACT
+===============================================================================
+
+For any use beyond what clause 2 permits — including redistribution, commercial
+use, or reuse of the rules or the export parsing — you need written permission
+from Jaybel.
+
+    Jaybel Office Choice
+    75 Wolston Road, Sumner QLD 4074, Australia
+    accounts@jaybel.com.au
+    www.jaybel.com.au
